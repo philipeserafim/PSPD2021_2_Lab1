@@ -6,7 +6,6 @@
 
 #include "v1.h"
 
-
 /*
 	Procura o maior valor do vetor informado no lado do cliente e retorna em &result
 */

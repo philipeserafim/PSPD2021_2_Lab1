@@ -6,13 +6,13 @@
 #include "v1.h"
 
 bool_t
-xdr_vetor (XDR *xdrs, vetor *objp)
+xdr_vetor(XDR *xdrs, vetor *objp)
 {
 	register int32_t *buf;
 
 	int i;
-	 if (!xdr_vector (xdrs, (char *)objp->vetor, 10,
-		sizeof (float), (xdrproc_t) xdr_float))
-		 return FALSE;
+	if (!xdr_vector(xdrs, (char *)objp->vetor, 10,
+									sizeof(float), (xdrproc_t)xdr_float))
+		return FALSE;
 	return TRUE;
 }

@@ -5,7 +5,7 @@
  */
 
 #include "v1.h"
-#include<math.h>
+#include <math.h>
 
 void lab1_50(char *host)
 {

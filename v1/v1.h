@@ -8,46 +8,46 @@
 
 #include <rpc/rpc.h>
 
-
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
-
-struct vetor {
-	float vetor[10];
-};
-typedef struct vetor vetor;
+	struct vetor
+	{
+		float vetor[10];
+	};
+	typedef struct vetor vetor;
 
 #define LAB1 5050
 #define V1 50
 
 #if defined(__STDC__) || defined(__cplusplus)
 #define getMaior 11
-extern  float * getmaior_50(vetor *, CLIENT *);
-extern  float * getmaior_50_svc(vetor *, struct svc_req *);
+	extern float *getmaior_50(vetor *, CLIENT *);
+	extern float *getmaior_50_svc(vetor *, struct svc_req *);
 #define getMenor 12
-extern  float * getmenor_50(vetor *, CLIENT *);
-extern  float * getmenor_50_svc(vetor *, struct svc_req *);
-extern int lab1_50_freeresult (SVCXPRT *, xdrproc_t, caddr_t);
+	extern float *getmenor_50(vetor *, CLIENT *);
+	extern float *getmenor_50_svc(vetor *, struct svc_req *);
+	extern int lab1_50_freeresult(SVCXPRT *, xdrproc_t, caddr_t);
 
 #else /* K&R C */
 #define getMaior 11
-extern  float * getmaior_50();
-extern  float * getmaior_50_svc();
+extern float *getmaior_50();
+extern float *getmaior_50_svc();
 #define getMenor 12
-extern  float * getmenor_50();
-extern  float * getmenor_50_svc();
-extern int lab1_50_freeresult ();
+extern float *getmenor_50();
+extern float *getmenor_50_svc();
+extern int lab1_50_freeresult();
 #endif /* K&R C */
 
-/* the xdr functions */
+	/* the xdr functions */
 
 #if defined(__STDC__) || defined(__cplusplus)
-extern  bool_t xdr_vetor (XDR *, vetor*);
+	extern bool_t xdr_vetor(XDR *, vetor *);
 
 #else /* K&R C */
-extern bool_t xdr_vetor ();
+extern bool_t xdr_vetor();
 
 #endif /* K&R C */
 
